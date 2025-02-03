@@ -1,87 +1,226 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/*Limpa a formatação automatica*/
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+ 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+ 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+ 
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ 
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+ 
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+ 
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+ 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
-
-
-/*
-selector{
-    propriedade:valor;
+ 
+ 
+ 
+body {
+    background-color:rgb(118, 118, 119);/*Coloca cor na tela de fundo do site */
+    font-family: arial;/*Muda a fonte*/
 }
-*/
-
-body{ /*seletor de tag*/
-    background-color: #FFC107; /* muda a cor do fundo*/
-    font-family: arial; /* muda o tipo da letra*/
-}
-
-#col1{/*seletor de id*/
+ 
+#col {/*seletor de ID*/
     background-color: white;
-    width: 400px; /* defini a largura*/
-    text-align: center; /* alinha o textos*/
-    padding-top: 10px; /*adicionar espaçamento ao topo*/
-    padding-left: 38px; /* adicionar espaçamento para esquerda*/
-    padding-right: 38px; /* adicionar espaçamento para direita*/
-    padding-bottom: 38px /* adicionar espaçamento para baixo*/
+    width: 436px;/*cria um limite da onde vai ter a cor desejada*/
+    height: 580px;/*cria um limite da onde vai ter a cor desejada*/
+    text-align: center;/*Coloca o texto centralizado no ID*/
+    padding-top: 10px;/*Move o seletor para cima*/
+    padding-bottom: 38;/*Move o seletor pra baixo*/
+    padding-right: 38px;/*Move o seletor para direita*/
+    padding-left: 38px;/*Move o seletor para esquerda*/
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.5);
+    /*Só o padding: 10px 38px 38px 38px ele faz a mesma coisa só que de forma abreviada(Ele segue o sentido horário, topo, direita, baixo e esquerda)*/
+    /*O margin: ; ele nove o bloco ou seletor para o meio ou centro da tela*/
 }
-
-.titulo{ /*seletor de classe*/
-    font-size: 32px; /* muda o tamanho da fonte*/
-    margin-top:14px; /* muda o tamanho da margem do topo*/
-    margin-bottom:12px; /* muda o tamanho da margem de baixo*/
-    font-weight: bold; /* defini a espessura da fonte*/
+ 
+.titulo {/*Cria um espaçamento entre as partes do class*/
+    /*seletor de Classe*/
+    font-size: 32px;/*Aumenta a fonte do seletor*/
+    margin-top: 14px;/*Aumenta o seletor para cima*/
+    margin-bottom: 12px;/*Aumenta o seletor para baixo*/
+    font-weight: bold;/*Muda a fonte*/
 }
-
-.texto{
+.texto{/*Cria um espaçamento entre as partes do class*/
     font-size: 18px;
     font-weight: bold;
 }
-
-.pedido{
-    margin-top: 32px;
-    text-align: left;
+.pedido{/*Cria um espaçamento entre as partes do class*/
+margin-top: 32px;/*Aumenta o seletor para cima*/
+text-align: left;
+}
+.rotulo{
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
+    
+}
+.campo-texto{
+    width: 100%;
+    font-size: 16px;
+    color:#434343;
+    padding: 7px 13px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    box-sizing:  border-box;
+}
+ 
+.botao-reservar{
+    width: 100%;
+background-color: #050505;
+    color: white;
+    line-height: 150%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: nome ;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+#col2{
+    width: 800px;
+margin-left: 39px;
+}
+.ofertas{
+font-size: 36px;
+font-weight: bold;
+color: white;
+}
+ 
+.destaque{
+    color: #ff0000;
+}
+ 
+.texto-oferta{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.tudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
